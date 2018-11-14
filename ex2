@@ -1,0 +1,24 @@
+
+class Employee():
+
+        #Define the constructor.
+     def __init__(self, name, IDnumber, department, jobTitle):
+         self.name = name
+         self.IDnumber = IDnumber
+         self.department = department
+         self.jobTitle = jobTitle
+
+    #Define the function to return the details of the employees.
+     def __str__(self):
+         return self.name+ ", " +str(self.IDnumber)+ ", "+self.department+ ", " +self.jobTitle
+
+#Craete the objects of the Employee Class.
+x = Employee("Susan Meyers", 47899, "Accounting", "Vice president")
+y = Employee("Marke Jones", 39119, "IT", "programming")
+z = Employee("Joy Rogers", 81774, "Manufacturing", "Engineering")
+
+#Display the employee Details.
+print('Employee Details:')
+print(x)
+print(y)
+print(z)
